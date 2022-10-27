@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(../images/f1_1.jpg) no-repeat center 0;
+    background-size: cover;
+}
+
+.cloud img {
+    position: absolute;
+    left: 50%;
+}
+
+.cloud img:nth-child(1) {
+    top: 20px;
+    margin-left: -260px;
+    animation: cloudMove 2s linear infinite alternate;
+}
+
+.cloud img:nth-child(2) {
+    top: 100px;
+    margin-left: 380px;
+    animation: cloudMove 2.5s linear infinite alternate;
+}
+
+.cloud img:nth-child(3) {
+    top: 200px;
+    margin-left: -560px;
+    animation: cloudMove 3s linear infinite alternate;
+}
+
+/* 云彩的动画 */
+@keyframes cloudMove {
+    to {
+        transform: translateX(40px);
+    }
+}
+
+/* 热气球 */
+.balloon {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -390px;
+    animation: balloonMove 1.5s linear infinite alternate;
+}
+
+/* 气球的动画 */
+@keyframes balloonMove {
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+/* 文字 */
+.text {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: text 1s ease forwards;
+}
+
+/* 文字动画 */
+@keyframes text {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    20% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    40% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* 长颈鹿 */
+.giraffe {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: 160px;
+    top: 15%;
+}
+
+/* 跳动文字 */
+.jump_text img {
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    width: 100px;
+}
+
+.jump_text img:nth-child(1) {
+    margin-left: -390px;
+    animation: jump_text 0.8s infinite alternate;
+}
+
+.jump_text img:nth-child(2) {
+    margin-left: -180px;
+    animation: jump_text 0.8s 0.2s infinite alternate;
+}
+
+.jump_text img:nth-child(3) {
+    margin-left: 35px;
+    animation: jump_text 0.8s 0.4s infinite alternate;
+}
+
+.jump_text img:nth-child(4) {
+    margin-left: 240px;
+    animation: jump_text 0.8s 0.6s infinite alternate;
+}
+
+/* 跳动文字动画 */
+@keyframes jump_text {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}

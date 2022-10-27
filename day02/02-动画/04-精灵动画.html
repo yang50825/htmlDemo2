@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 140px;
+        height: 140px;
+        /* border: 1px solid #000; */
+        background: url(./images/bg.png);
+        /* 12:小图个数 */
+        animation: run 1s steps(12) infinite, move 1s forwards;
+      }
+
+      @keyframes run {
+        /* from {
+          background-position: 0 0;
+        } */
+        to {
+          background-position: -1680px 0;
+        }
+      }
+
+      @keyframes move {
+        /* 动画的开始状态和盒子的默认样式相同的，可以省略开始状态的代码 */
+        /* from {
+          transform: translate(0);
+        } */
+        to {
+          transform: translateX(800px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
