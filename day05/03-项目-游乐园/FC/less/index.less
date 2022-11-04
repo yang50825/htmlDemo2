@@ -1,0 +1,140 @@
+@import './base';
+@import './normalize';
+
+// 根字号变量
+@rootSize: 37.5rem;
+
+body {
+  background-color: #f0f0f0;
+}
+
+// 主体内容
+.main {
+  margin-bottom: (50 / @rootSize);
+
+  // banner区域
+  .banner {
+    height: (160 / @rootSize);
+  }
+
+  // 活动标题
+  .title {
+    height: (40 / @rootSize);
+    line-height: (40 / @rootSize);
+    padding-left: (15 / @rootSize);
+    h4 {
+      font-size: (14 / @rootSize);
+      color: #3c3c3c;
+      letter-spacing: 0.01px;
+    }
+  }
+
+  // 活动
+  .item {
+    margin-bottom: (10 / @rootSize);
+    // 图片
+    .pic {
+      position: relative;
+      height: (160 / @rootSize);
+
+      // 收藏图标
+      .icon-shoucang1 {
+        position: absolute;
+        top: (15 / @rootSize);
+        right: (18 / @rootSize);
+        color: #fff;
+        font-size: (24 / @rootSize);
+      }
+
+      // 活动状态
+      .active {
+        position: absolute;
+        top: (-4 / @rootSize);
+        left: (15 / @rootSize);
+        width: (68 / @rootSize);
+        height: (29 / @rootSize);
+        background-image: url(../images/status_active.png);
+        background-size: cover;
+        font-size: (12 / @rootSize);
+        line-height: (29 / @rootSize);
+        color: #fff;
+        text-align: center;
+
+        // 灰色图片样式
+        // 必须是active类且同时应用了off类
+        &.off {
+          background-image: url(../images/status_default.png);
+        }
+      }
+    }
+
+    // 文字
+    .txt {
+      padding: (10 / @rootSize) (15 / @rootSize);
+      background: #fff;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        h5 {
+          width: (290 / @rootSize);
+          color: #3c3c3c;
+          font-size: (15 / @rootSize);
+          line-height: (21 / @rootSize);
+          font-weight: 400;
+        }
+
+        p {
+          font-size: 15px;
+          color: #fe6249;
+          letter-spacing: 0.07px;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        p {
+          margin-top: (10 / @rootSize);
+          margin-right: (15 / @rootSize);
+          font-family: FZLTHJW--GB1-0;
+          font-size: (11 / @rootSize);
+          color: #b4b4b4;
+          letter-spacing: 0.05px;
+          em {
+            font-size: (11 / @rootSize);
+          }
+        }
+      }
+    }
+  }
+}
+
+// 底部工具栏
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: (50 / @rootSize);
+  background-color: #feca49;
+
+  a {
+    color: #d78b09;
+    text-align: center;
+    .iconfont {
+      font-size: (24 / @rootSize);
+    }
+
+    p {
+      font-family: FZLTXHKM;
+      font-size: (11 / @rootSize);
+      letter-spacing: 0.12px;
+    }
+
+    &.current {
+      color: #fff;
+    }
+  }
+}
