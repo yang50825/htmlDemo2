@@ -57,6 +57,8 @@ header .top .right .login {
   width: 6.4vw;
   height: 6.4vw;
   margin-left: 6.4vw;
+}
+header .top .right .login img {
   border-radius: 50%;
 }
 header .top .right .download {
@@ -69,6 +71,21 @@ header .bottom {
   justify-content: space-between;
   height: 10.66666667vw;
   border-bottom: 1px solid #eee;
+}
+header .bottom .tab ul {
+  display: flex;
+}
+header .bottom .tab ul li {
+  padding: 0 4.26666667vw;
+}
+header .bottom .tab ul li a {
+  display: block;
+  line-height: 10.13333333vw;
+  font-size: 3.73333333vw;
+}
+header .bottom .tab ul li a.actived {
+  color: #fb7299;
+  border-bottom: 2px solid #fb7299;
 }
 header .bottom .more a {
   display: block;
