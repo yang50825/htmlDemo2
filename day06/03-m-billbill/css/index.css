@@ -31,8 +31,10 @@ header {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 999;
   width: 100%;
   height: 22.4vw;
+  background-color: #fff;
 }
 header .top {
   display: flex;
@@ -97,4 +99,36 @@ header .bottom .more a {
 }
 header .bottom .more a .general_pulldown_s {
   font-size: 5.86666667vw;
+}
+.video_content {
+  margin: 22.4vw 1.33333333vw 0;
+}
+.video_content .video_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video_content .video_list a {
+  width: 50%;
+  padding: 2.13333333vw 1.33333333vw;
+  font-size: 3.2vw;
+}
+.video_content .video_list a .pic {
+  position: relative;
+}
+.video_content .video_list a .pic .count {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1.33333333vw;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), transparent);
+}
+.video_content .video_list a .pic .count .iconfont {
+  vertical-align: middle;
+}
+.video_content .video_list a .txt {
+  margin-top: 1.33333333vw;
 }
