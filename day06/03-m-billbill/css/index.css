@@ -132,3 +132,32 @@ header .bottom .more a .general_pulldown_s {
 .video_content .video_list a .txt {
   margin-top: 1.33333333vw;
 }
+footer {
+  position: fixed;
+  bottom: 8vw;
+  z-index: 15;
+  width: 100%;
+  height: 9.6vw;
+}
+footer .m-home-float-openapp {
+  margin: 0 auto;
+  width: 93.6vw;
+  line-height: 9.6vw;
+  border-radius: 6.66666667vw;
+  background: #fb7299;
+  color: #fff;
+  left: 3.2vw;
+  text-align: center;
+  font-size: 3.73333333vw;
+  -webkit-box-shadow: 0 0.53333333vw 2.66666667vw rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.53333333vw 2.66666667vw rgba(0, 0, 0, 0.2);
+}
+footer .m-home-float-openapp .Navbar_logo {
+  position: relative;
+  top: -0.26666667vw;
+  margin-right: 2.66666667vw;
+  vertical-align: middle;
+}
+footer .m-home-float-openapp span {
+  vertical-align: middle;
+}
